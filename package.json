@@ -3,11 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://[your-github-username].github.io/[your-repo-name]", // Replace with your GitHub username & repo name
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build", // Builds the production-ready files
+    "deploy": "gh-pages -d dist" // Deploys the 'dist' folder to GitHub Pages
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.7",
@@ -27,7 +30,8 @@
     "react-hook-form": "^7.56.1",
     "react-router-dom": "^7.5.2",
     "tailwind-merge": "^3.2.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "gh-pages": "^6.1.1" // Add this for GitHub Pages deployment
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
