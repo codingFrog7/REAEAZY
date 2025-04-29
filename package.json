@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://window.github.io/REAEAZY",
+  "homepage": "https://github.com/codingFrog7/REAEAZY",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
