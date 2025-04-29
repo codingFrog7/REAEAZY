@@ -7,6 +7,7 @@ import SignUpPage from './pages/SignUpPage';
 import GetInTouch from './pages/GetInTouch';
 import Dashboard from './pages/dashboard';
 import EditProfile from './pages/MiniCOP/EditProfile';
+import About from './pages/About';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path='/GetinTouch' element={<GetInTouch />} />
         <Route path='/DashBoard' element={<Dashboard />} />
         <Route path='/EditProfile' element={<EditProfile/>} />
+        <Route path='/about' element={<About />} />
       </Routes>
 
     </div>
