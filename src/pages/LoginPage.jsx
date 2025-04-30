@@ -1,19 +1,49 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function LoginPage() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log({ email, password });
+  
+  };
+
   return (
-    <div className="flex min-h-screen bg-black justify-center">
+    <div className="flex min-h-screen bg-black">
+      {/* Left Section */}
+      <div className="relative hidden w-1/2 p-8 lg:block">
+        <div className="h-full w-full overflow-hidden rounded-3xl bg-gradient-to-b from-amber-500 via-amber-600 to-amber-700 ">
+          <div className="flex h-full flex-col items-center justify-center px-8 text-center">
+            <div
+              className="relative"
+              style={{
+                fontFamily: "system-ui, sans-serif",
+                textShadow: "2px 2px 4px rgba(0,0,0,0.2)",
+              }}
+            >
+              <h2 className="text-9xl font-bold tracking-tighter leading-none text-white">RENT</h2>
+              <h2 className="text-9xl font-bold tracking-tighter leading-none text-white mt-0">EAZY</h2>
+              <div className="absolute -inset-4 border-4 border-white/30 rounded-3xl -z-10"></div>
+              <div className="absolute top-1/2 left-0 right-0 h-1 bg-white/40 -translate-y-1/2 transform"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Right Section */}
       <div className="flex w-full items-center justify-center bg-black p-6 lg:w-1/2">
-        <div className="w-full max-w-md rounded-[40px] p-12">
+        <div className="w-full max-w-md rounded-3xl p-12">
           <div className="mx-auto max-w-sm">
             <h2 className="mb-2 text-3xl font-bold text-white">Login to your Account</h2>
             <p className="mb-8 text-gray-400">Enter your credentials to access your account.</p>
 
             <div className="mb-8 grid gap-4">
-              <Button variant="outline" className="h-12">
+              <button className="h-12 w-full border border-gray-800 text-white bg-transparent hover:bg-gray-800 rounded-md flex items-center justify-center">
                 <svg className="mr-2 h-5 w-5" viewBox="0 0 24 24">
-                  {/* Google Icon */}
+                  {/* Google Logo Paths */}
                   <path
                     d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
                     fill="#4285F4"
@@ -32,7 +62,7 @@ export default function LoginPage() {
                   />
                 </svg>
                 Google
-              </Button>
+              </button>
             </div>
 
             <div className="relative mb-8">
@@ -44,35 +74,42 @@ export default function LoginPage() {
               </div>
             </div>
 
-            <form className="space-y-6">
-              <div className="space-y-2">
-                <Input
-                  className="h-12 border-gray-800 bg-gray-900 text-white placeholder:text-gray-400"
-                  placeholder="Email"
-                  type="email"
-                />
-              </div>
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <input
+                className="h-12 w-full rounded-md border border-gray-800 bg-gray-900 text-white px-3 py-2 placeholder:text-gray-400"
+                placeholder="example@domain.com"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
 
-              <div className="space-y-2">
-                <Input
-                  className="h-12 border-gray-800 bg-gray-900 text-white placeholder:text-gray-400"
+              <div>
+                <input
+                  className="h-12 w-full rounded-md border border-gray-800 bg-gray-900 text-white px-3 py-2 placeholder:text-gray-400"
                   placeholder="Password"
                   type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
-                <p className="text-right text-sm text-gray-400">
+                <p className="text-right text-sm text-gray-400 mt-1">
                   <a href="#" className="hover:underline">
                     Forgot password?
                   </a>
                 </p>
               </div>
 
-              <Button className="h-12 w-full bg-white text-black hover:bg-gray-100">Log In</Button>
+              <button
+                type="submit"
+                className="h-12 w-full rounded-md bg-white text-black hover:bg-gray-100 transition"
+              >
+                Log In
+              </button>
 
               <p className="text-center text-sm text-gray-400">
                 Don't have an account?{" "}
-                <a href="/" className="text-white hover:underline">
+                <Link to="/SignUpPage" className="text-white hover:underline">
                   Sign Up
-                </a>
+                </Link>
               </p>
             </form>
           </div>

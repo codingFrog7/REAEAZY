@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <div className="fixed top-0 left-0 w-full h-20 px-6 bg-black border-b-4 flex items-center justify-evenly rounded-b-2xl z-50">
       {/* Logo */}
-      <div className="text-white font-['Fliege_Mono'] font-extrabold text-xl border-8 leading-4 p-1 border-white">
+      <div className="text-white font-['Fliege_Mono'] bg- font-extrabold text-xl border-8 leading-4 p-1 border-white">
         RENT<br />EAZY
       </div>
 

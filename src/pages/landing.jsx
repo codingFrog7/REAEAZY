@@ -87,7 +87,78 @@ export default function Landing() {
       rating: 4.3,
       image: "https://media.istockphoto.com/id/1395224980/photo/a-holy-city-north-india-filled-with-temples-and-religious-places.jpg?s=612x612&w=0&k=20&c=0mLTGDaGiuifFJko9sC0Xo-bWSNoFXQxgrtK5N4NMco=",
       type: "Girls PG",
+    },{
+      "id": 9,
+      "title": "Basic Boys PG in Sector 62",
+      "location": "Noida, Uttar Pradesh",
+      "price": "₹5,500/month",
+      "rating": 3.8,
+      "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "type": "Boys PG"
     },
+    {
+      "id": 10,
+      "title": "Standard Girls PG in Kothrud",
+      "location": "Pune, Maharashtra",
+      "price": "₹6,500/month",
+      "rating": 4.1,
+      "image": "https://images.unsplash.com/photo-1600121848594-d8644e57abab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "type": "Girls PG"
+    },
+    {
+      "id": 11,
+      "title": "Student PG Near College",
+      "location": "Bangalore, Karnataka",
+      "price": "₹4,800/month",
+      "rating": 3.5,
+      "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "type": "Student PG"
+    },
+    {
+      "id": 12,
+      "title": "Working Men's PG in Ameerpet",
+      "location": "Hyderabad, Telangana",
+      "price": "₹6,200/month",
+      "rating": 4.0,
+      "image": "https://images.unsplash.com/photo-1600566752227-8f3e8a57a8dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "type": "Working Professionals"
+    },
+    {
+      "id": 13,
+      "title": "Girls Hostel Near DU",
+      "location": "New Delhi, Delhi",
+      "price": "₹7,000/month",
+      "rating": 4.2,
+      "image": "https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "type": "Girls Hostel"
+    },
+    {
+      "id": 14,
+      "title": "Budget PG in Electronic City",
+      "location": "Bangalore, Karnataka",
+      "price": "₹5,000/month",
+      "rating": 3.6,
+      "image": "https://images.unsplash.com/photo-1600121848594-d8644e57abab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "type": "Boys PG"
+    },
+    {
+      "id": 15,
+      "title": "Working Women's PG",
+      "location": "Gurgaon, Haryana",
+      "price": "₹7,500/month",
+      "rating": 4.3,
+      "image": "https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "type": "Girls PG"
+    },
+    {
+      "id": 16,
+      "title": "Shared Room in Kolkata",
+      "location": "Kolkata, West Bengal",
+      "price": "₹4,500/month",
+      "rating": 3.9,
+      "image": "https://images.unsplash.com/photo-1600566752227-8f3e8a57a8dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "type": "Shared Room"
+    }
   ];
 
   const categories = [
